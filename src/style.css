@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+}
+
+.fora-da-div{
+    background-image: url(https://i.pinimg.com/564x/7f/1c/dc/7f1cdce48a6ef2cb2297d1e61a6ee462.jpg);
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    background-color: black;
+    width: 16%;
+    border-bottom-right-radius: 40px;
+}
+
+nav{
+    width: 70%;
+}
+
+.pesquisa{
+    display: flex;
+    height: 100px;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+b{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.value{
+    cursor: pointer;
+    transition: .5s;
+}
+
+.value:hover{
+    color: gray;
+}
+
+.elemento-verfical{
+    width: 1.5px;
+    height: 50px;
+    background-color: white;
+}
+
+hr{
+    background-color: white;
+    height: 1.5px;
+    border: none;
+}
