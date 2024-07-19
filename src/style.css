@@ -16,19 +16,19 @@ header{
 }
 
 .logo{
-    background-color: black;
-    width: 16%;
+    width: 15%;
+    height: 120px;
     border-bottom-right-radius: 40px;
 }
 
 nav{
-    width: 84%;
+    width: 85%;
 }
 
 .pesquisa{
     width: 70%;
     display: flex;
-    height: 100px;
+    height: 120px;
     color: white;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
@@ -64,15 +64,14 @@ hr{
 }
 
 .fora-da-div{
-    background-image: url(https://i.pinimg.com/564x/7f/1c/dc/7f1cdce48a6ef2cb2297d1e61a6ee462.jpg);
     position: absolute;
     width: 100%;
-    height: 550px;
+    height: 650px;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
-    margin-top: -101px;
+    margin-top: -130px;
 }
 
 .antes-de-comecar{
@@ -84,7 +83,7 @@ hr{
 }
 
 h1{
-    margin-top: 40px;
+    margin-top: 50px;
     width: 40%;
     margin-left: 150px;
     font-size: 50px;
@@ -98,16 +97,20 @@ h1{
     margin-left: 150px;
     display: flex;
     font-family: "Oswald", sans-serif;
-    justify-content: space-evenly;
+    /* justify-content: flex-start; */
     align-items: center;
 }
 
 .saiba-empresa{
     width: 180px;
     height: 70px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-style: u;
 }
 
 .atendimento{
+    margin-left: 40px;
     width: 200px;
     color: gray;
 }
