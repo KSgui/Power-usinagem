@@ -26,13 +26,13 @@ nav{
 }
 
 .pesquisa{
-    width: 70%;
+    width: 80%;
     display: flex;
     height: 120px;
     color: white;
     font-family: "Oswald", sans-serif;
-    font-size: 20px;
-    margin-left: 30%;
+    font-size: 22px;
+    margin-left: 20%;
 }
 
 b{
@@ -112,5 +112,5 @@ h1{
 .atendimento{
     margin-left: 40px;
     width: 200px;
-    color: gray;
+    color: white;
 }
