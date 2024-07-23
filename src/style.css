@@ -52,14 +52,14 @@ b{
 }
 
 .elemento-verfical{
-    width: 1px;
+    width: 2px;
     height: 50px;
     background-color: white;
 }
 
 hr{
     background-color: white;
-    height: 1px;
+    height: 2px;
     border: none;
 }
 
@@ -75,11 +75,13 @@ hr{
 }
 
 .antes-de-comecar{
+    margin-top: 30px;
     width: 100%;
     height: 400px;
     font-family: "Oswald", sans-serif;
     display: flex;
     flex-direction: column;
+    /* background-color: aqua; */
 }
 
 h1{
@@ -106,11 +108,201 @@ h1{
     height: 70px;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
-    font-style: u;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.saiba-empresa:hover{
+    background-color: white;
+    color: rgb(255, 119, 0);
 }
 
 .atendimento{
     margin-left: 40px;
     width: 200px;
     color: white;
+    font-size: 18px;
+}
+
+.gambiarra{
+    /* background-color: green; */
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    margin-top: 20px;
+    background-image: linear-gradient(to top, white, rgb(255, 234, 217), transparent);
+}
+
+.introducao{
+    margin-top: 100px;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.text-introducao{
+    width: 120%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 60px; */
+    text-align: justify;
+    margin-top: -20px;
+}
+
+h2{
+    margin-top: -10px;
+    font-size: 180px;
+    color: rgb(235, 229, 229);
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    width: 50%;
+}
+
+.mini-logo{
+    z-index: 1;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    color: rgb(255, 119, 0);
+    font-size: 30px;
+}
+
+.divulga{
+    width: 85%;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: "Oswald", sans-serif;
+    color: rgb(30, 59, 78);
+    font-size: 50px;
+    font-weight: 600;
+    word-spacing: -3px;
+}
+
+.contexto{
+    color: gray;
+    z-index: 1;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    width: 80%;
+}
+
+.saiba-empresa-em{
+    width: 180px;
+    height: 70px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: rgb(255, 119, 0);
+}
+
+.usinagemCNC{
+    width: 100%;
+    height: 65%;
+    border-top-left-radius: 230px;
+    border-bottom-left-radius: 230px;
+}
+
+.faixa-orcamento{
+    background-color: rgb(255, 119, 0);
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.orcamento{
+    margin-top: 15px;
+    width: 220px;
+    height: 50px;
+    font-family: "Oswald", sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.servicos{
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.em-ordem{
+    width: 80%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    padding: 10px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 119, 0);
+    align-items: flex-end;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+}
+
+.semi-card{
+    background-color: rgba(128, 128, 128, 0.659);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.sub-text{
+    display: none;
+    text-align: justify;
+    padding: 20px;
+    transition: .8s;
+}
+
+.cards:hover{
+    .semi-card{
+        height: 400px;
+    }
+
+    .sub-text{
+        display: block;
+    }
 }
