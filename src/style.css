@@ -159,7 +159,7 @@ h1{
 
 h2{
     margin-top: -10px;
-    font-size: 180px;
+    font-size: 90px;
     color: rgb(235, 229, 229);
     font-family: "Oswald", sans-serif;
     position: absolute;
@@ -356,12 +356,11 @@ h2{
 
 .clientes{
     width: 100%;
-    height: 60vh;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: gray;
-    /* overflow: hidden; */
+    background-color: rgb(219, 218, 218);
 }
 
 .nossos-clientes{
@@ -385,7 +384,6 @@ h2{
 .logos{
     overflow: hidden;
     padding: 60px 0;
-    background-color: gray;
     white-space: nowrap;
     position: relative;
     width: 100%;
@@ -403,12 +401,12 @@ h2{
 
 .logos:before{
     left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), gray);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(219, 218, 218));
 }
 
 .logos:after{
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), gray);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(219, 218, 218));
 }
 
 .logos:hover .logos-slide {
@@ -416,11 +414,109 @@ h2{
 }
 
 .logos-slide{
+    margin-top: -25px;
+    height: 300px;
     display: inline-block ;
-    animation: 15s slide infinite linear;
+    animation: 10s slide infinite linear;
 }
 
 .padrao{
-    height: 200px;
-    margin: 0 40px;
+    height: 150px;
+    margin: 30px;
+    padding: 15px;
+    cursor: pointer;
+    transition: .3s;
+    border: 3px solid transparent;
+}
+
+.padrao:hover{
+    border: 3px solid rgb(255, 119, 0);
+    border-radius: 10px;
+    /* background-color: blue; */
+}
+
+footer {
+    background-color: rgb(255, 119, 0);
+    color: #fff;
+    height: 450px;
+}
+
+.footer-wave-svg {
+    background-color: transparent;
+    display: block;
+    height: 30px;
+    position: relative;
+    top: -1px;
+    width: 100%;
+}
+
+.footer-wave-path {
+    fill: rgb(219, 218, 218);
+}
+
+.footer-content {
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mini-logo-foto{
+    width: 180px;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.informacao-final{
+    height: 180px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Oswald", sans-serif;
+}
+
+.breve-introducao{
+    width: 20%;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.horario-top{
+    margin-top: 10px;
+}
+
+.mini-texto{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.espaco-tempo{
+    width: 22%;
+}
+
+.local{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.contato{
+    width: 20%;
+}
+
+.contatos{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.voltar-ao-topo{
+    margin-top: 120px;
+    width: 15%;
+    height: 60px;
 }
