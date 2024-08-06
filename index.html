@@ -6,11 +6,11 @@
     <title>Document</title>
 
         <!-- Fontawesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <img src="./src/img/Captura de tela 2024-07-17 220352.png" class="logo"/>
         <nav>
             <div class="pesquisa">
@@ -126,24 +126,9 @@
                 d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z">
             </path>
         </svg>
-        <div class="footer-content">
-            <img src="./src/img/Captura de tela 2024-07-17 210220.png" class="mini-logo-foto">
-
-            <!-- Fontawesome cdn link -->
-            <figure class="redes-sociais">
-                <h3 class="social">SIGA NAS RESDES</h3>
-                <a href="#">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </figure>
-        </div>
-        <hr/>
         <div class="informacao-final">
             <div class="breve-introducao">
-                <h3>Power Usinagem</h3>
+                <img src="./src/img/Captura de tela 2024-07-17 210220.png" class="mini-logo-foto">
                 <span class="mini-texto">A TGB Agro fica localizada em Itapira e oferece serviços de usinagem, metalúrgica e fabricação de máquinas e implementos agrícolas. Tem como carro-chefe a Ensacadora BAG 30.</span>
             </div>
             <div class="espaco-tempo">
@@ -167,11 +152,32 @@
                     WhatsApp (51) 989099926</br>
                     comercial@powerusinagem.com.br 
                 </span>
+
+             <!-- Fontawesome cdn link -->
+                <figure class="redes-sociais">
+                    <h3 class="social">SIGA NAS REDES</h3>
+                    <div class="centralizado">
+                        <a href="#" class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </figure>
             </div>
 
-            <button class="voltar-ao-topo">
-                Voltar ao Topo
-            </button>
+            <a href="#header" class="button-topo">
+                <button class="voltar-ao-topo">
+                    Voltar ao Topo
+                </button>
+            </a>
         </div>
     </footer>
 </body>
