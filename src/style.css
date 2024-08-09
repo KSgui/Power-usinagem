@@ -470,7 +470,7 @@ footer {
 }
 
 .breve-introducao{
-    width: 20%;
+    width: 22%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -511,7 +511,7 @@ h3{
 }
 
 .contato{
-    width: 25%;
+    width: 22%;
 }
 
 .contatos{
@@ -521,10 +521,9 @@ h3{
 }
 
 .redes-sociais{
-    /* background-color: rebeccapurple; */
     width: 100%;
     height: 40%;
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -532,11 +531,10 @@ h3{
 }
 
 .social{
-    margin-left: -50%;
+    margin-left: -58%;
 }
 
 .centralizado{
-    /* background-color: red; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -593,16 +591,36 @@ h3{
 }
 
 .button-topo{
-    width: 20%;
+    width: 16%;
     padding: 30px 0;
     display: flex;
     align-items:end;
     justify-content: center;
-
+    cursor: pointer;
+    transition: all .4s ease;
 }
 
 .voltar-ao-topo{
     margin-top: 120px;
-    width: 80%;
+    width: 100%;
     height: 60px;
+}
+
+.whatsapp{
+    width: 70px;
+    height: 70px;
+    background-color: green;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    margin-left: 94%;
+    margin-top: 5%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.whatsapp-button{
+    width: 100%;
+    height: 100%;
 }

@@ -35,6 +35,11 @@
             <span class="atendimento">Atendimento personalizado às especificações dos clientes com versatilidade e agilidade</span>
         </div>
     </section>
+
+    <button class="whatsapp">
+        <img src="./src/img/whatsapp-button.png" class="whatsapp-button">
+    </button>
+
     <div class="gambiarra"></div>
     <main>
         <section class="introducao">
@@ -173,12 +178,25 @@
                 </figure>
             </div>
 
-            <a href="#header" class="button-topo">
-                <button class="voltar-ao-topo">
+            <div class="button-topo">
+                <button class="voltar-ao-topo" onclick="backTop()">
                     Voltar ao Topo
                 </button>
-            </a>
+            </div>
         </div>
     </footer>
+
+    <!-- <button class="whatsapp">
+        <img src="" alt="">
+    </button> -->
+
+    <script>
+        function backTop(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
 </body>
 </html>
