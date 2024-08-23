@@ -672,8 +672,8 @@ h3{
     width: 340px;
     height: 65px;
     background-color: transparent;
-    margin-left: 75%;
-    margin-top: 85px;
+    margin-top: -10px;
+    padding-left: 97%;
     border: none;
     display: flex;
     align-items: center;
@@ -696,7 +696,7 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: -180%;
+    margin-right: -20%;
     position: absolute;
     transition: 1s;
     border-radius: 10px;
@@ -716,7 +716,7 @@ h3{
 
 .whatsapp:hover{
     .caixa-de-texto{
-        margin-right: 12%;
+        margin-right: 27%;
         transition: .9s;
     }
 }
@@ -725,7 +725,7 @@ h3{
     width: 65px;
     height: 65px;
     position: absolute;
-    margin-left: 81%;
+    margin-left: -4.5%;
     z-index: 3;
     cursor: pointer;
 }
