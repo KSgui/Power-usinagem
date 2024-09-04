@@ -668,68 +668,64 @@ h3{
 
 }
 
-.whatsapp{
-    width: 340px;
-    height: 65px;
-    background-color: transparent;
-    margin-top: -10px;
-    padding-left: 97%;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* botão do whatsapp */
+
+.whatsapp-container {
     position: fixed;
-    overflow: hidden;
-    border-top-right-radius:100px;
-    border-bottom-right-radius: 100px;
-    z-index: 3;
+    display: inline-block;
+    margin-left: 94%;
+    bottom: 5%;
+    z-index: 10;
+
 }
 
-.caixa-de-texto{
-    width: 220px;
-    height: 50px;
-    background-color: white;
-    color: green;
-    font-size: 16px;
-    font-weight: 600;
+.whatsapp-btn img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.whatsapp-tooltip {
+    visibility: hidden;
+    height: 35px;
+    width: 200px;
+    background-color: #01cb4b;
     font-family: "Oswald", sans-serif;
+    color: #fff;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
-    margin-right: -20%;
+    border-radius: 5px;
+    padding: 5px 10px;
     position: absolute;
-    transition: 1s;
-    border-radius: 10px;
+    z-index: 1;
+    bottom: 10px; /* Ajuste conforme necessário */
+    left: -205%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
-.caixa-de-texto::before {
+.whatsapp-tooltip::before {
     position: absolute;
     content: "";
     height: 15px;
     width: 15px;
-    background: white;
-    bottom: 17px;
+    background-color: #01cb4b;
+    bottom: 15px;
     left: 100%;
     transform: translate(-50%) rotate(45deg);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: opacity 0.3s;
 }
 
-.whatsapp:hover{
-    .caixa-de-texto{
-        margin-right: 27%;
-        transition: .9s;
-    }
+.whatsapp-container:hover .whatsapp-tooltip {
+    visibility: visible;
+    opacity: 1;
 }
-
-.whatsapp-button{
-    width: 65px;
-    height: 65px;
-    position: absolute;
-    margin-left: -4.5%;
-    z-index: 3;
-    cursor: pointer;
-}
-
 
 *::-webkit-scrollbar {
     width: 17px;
