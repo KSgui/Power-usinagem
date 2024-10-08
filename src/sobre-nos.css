@@ -1,22 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-header{
+header {
     width: 100%;
 }
 
-nav{
+nav {
     display: flex;
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,24,199,1) 45%, rgba(7,0,110,1) 100%); */
     backdrop-filter: blur(2px);
-    /* box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37); */
-    /* border: 2px solid rgba(255, 255, 255, 0.18); */
     height: 80px;
     justify-content: space-between;
     display: flex;
@@ -25,17 +22,17 @@ nav{
     width: 100%;
 }
 
-.logo-power{
+.logo-power {
     height: 100%;
 }
 
-.topicos{
+.topicos {
     width: 35%;
     height: 90%;
     display: flex;
 }
 
-.lista-topicos{
+.lista-topicos {
     width: 100%;
     list-style: none;
     display: flex;
@@ -46,7 +43,7 @@ nav{
     font-size: 20px;
 }
 
-li{
+li {
     cursor: pointer;
     transition: .3s;
     width: 120px;
@@ -60,7 +57,7 @@ li{
     color: #fff;
 }
 
-li:hover{
+li:hover {
     background-color: #fff;
     width: 120px;
     padding: 5px;
@@ -68,7 +65,7 @@ li:hover{
     color: rgb(255, 119, 0);
 }
 
-.orcamento{
+.orcamento {
     width: 180px;
     height: 55px;
     font-family: "Oswald", sans-serif;
@@ -80,7 +77,7 @@ li:hover{
     color: #fff;
 }
 
-.nossas-redes{
+.nossas-redes {
     width: 20%;
     height: 55px;
     display: flex;
@@ -90,7 +87,7 @@ li:hover{
     font-size: 20px;
 }
 
-.icon{
+.icon {
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -101,47 +98,47 @@ li:hover{
     border: none;
 }
 
-.icon:hover{
+.icon:hover {
     background-color: white;
 
-    .fa-facebook-f{
+    .fa-facebook-f {
         color: #0077B5;
     }
 
-    .fa-instagram{
+    .fa-instagram {
         color: #E1306C;
     }
-    
-    .fa-linkedin{
+
+    .fa-linkedin {
         color: #4267B2;
     }
 
-    .fa-youtube{
+    .fa-youtube {
         color: #FF0000;
     }
 }
 
-.fa-facebook-f{
+.fa-facebook-f {
     color: #fff;
     padding: 0 10px;
 }
 
-.fa-instagram{
+.fa-instagram {
     color: #fff;
     padding: 0 10px;
 }
 
-.fa-linkedin{
+.fa-linkedin {
     color: #fff;
     padding: 0 10px;
 }
 
-.fa-youtube{
+.fa-youtube {
     color: #fff;
     padding: 0 10px;
 }
 
-.adaptando{
+.adaptando {
     display: flex;
     width: 100%;
     height: 90vh;
@@ -150,48 +147,112 @@ li:hover{
     justify-content: space-between;
 }
 
-.fotoReal{
+.fotoReal {
     width: 60%;
     height: 100%;
 }
 
-.infeite{
-   width: 40%;
-   height: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+.infeite {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.infinite-sec{
+.infinite-sec {
     font-family: "Oswald", sans-serif;
     /* background-color: red; */
     width: 80%;
 }
 
-.bem-vindo{
+.bem-vindo {
     font-size: 18px;
     color: #fff;
     font-weight: 400;
 }
 
-.sub-text{
+.sub-text {
     color: #fff;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.introducao{
+.introducao {
     color: #fff;
 }
 
-.proximo{
+.proximo {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     margin-left: -32%;
-    margin-top: 40%;
+    margin-top: 35%;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#antes-depois {
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+    width: 60%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.imagem1, .imagem2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.imagem2 {
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path -1s ease;
+}
+
+.container:hover .imagem2 {
+    clip-path: inset(0 0 0 0);
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    pointer-events: none;
+}
+
+#setas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    background: hsla(0, 0%, 100%, .5);
+    box-shadow: 0 0 6px transparent;
+    color: #000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.seta {
+    font-size: 40px;
+    color: rgb(255, 119, 0);
+    pointer-events: none;
+    font-weight: 900;
 }
