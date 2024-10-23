@@ -196,10 +196,18 @@ li:hover {
     align-items: center;
 }
 
+.enquadrando{
+    background-color: #fff;
+}
+
 .nossa-historia{
-    /* height: 100vh; */
+    height: 840px;
     display: flex;
     flex-direction: column;
+    background-color: rgb(227, 224, 224);
+    margin: 30px;
+    box-shadow: 2px 2px 20px rgb(227, 224, 224);
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08); */
 }
 
 .sinopse1{
@@ -211,8 +219,8 @@ li:hover {
 }
 
 .onde-tudo-comecou{
-    margin-top: -10px;
-    font-size: 90px;
+    margin-top: -20px;
+    font-size: 80px;
     font-family: "Oswald", sans-serif;
     color: rgb(255, 119, 0);
     position: absolute;
@@ -220,8 +228,8 @@ li:hover {
 
 .mini-logo{
     z-index: 1;
-    margin-top: 55px;
-    margin-left: 50px;
+    margin-top: 35px;
+    margin-left: 40px;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
     color: #1e3a5f;
@@ -230,16 +238,19 @@ li:hover {
 
 .contexto{
     width: 70%;
-    padding: 0 0 0 50px;
-    margin-top: 10px;
+    padding: 20px;
+    margin-top: 15px;
     font-size: 20px;
     font-family: "Oswald", sans-serif;
     text-align: justify;
-    color: gray;
+    color: #1e3a5f;
+    background-color: rgb(255, 119, 0);
+    border-radius: 10px;
 }
 
 .sub{
     width: 36%;
+    margin-top: 5px;
 }
 
 #antes-depois {
@@ -303,8 +314,6 @@ li:hover {
     font-weight: 900;
 }
 
-.ideais{
-    margin-top: 40px;
-    height: 400px;
-    background-color: orangered;
+.valores{
+    width: 100%;
 }
