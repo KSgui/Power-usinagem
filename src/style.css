@@ -17,18 +17,20 @@ header{
 
 .logo{
     width: 15%;
-    height: 120px;
+    height: 100px;
     border-bottom-right-radius: 40px;
+    backdrop-filter: blur(2px);
 }
 
 nav{
     width: 85%;
+    backdrop-filter: blur(2px);
 }
 
 .pesquisa{
     width: 80%;
     display: flex;
-    height: 120px;
+    height: 100px;
     color: white;
     font-family: "Oswald", sans-serif;
     font-size: 22px;
@@ -40,7 +42,6 @@ b{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    /* background-color: #FF0000; */
     margin-right: 30px;
 }
 
