@@ -1,3 +1,5 @@
+
+//EMPRESA ANTES - EMPRESA DEPOIS 
 const container = document.getElementById('antes-depois');
 const setas = document.getElementById('setas');
 
@@ -19,14 +21,7 @@ window.addEventListener('load', () => {
 
 
 
-// container.addEventListener('mousemove', (e) => {
-//     const rect = container.getBoundingClientRect();
-//     const xPos = e.clientX - rect.left;
-//     const yPos = e.clientY - rect.top;
-//     container.querySelector('.imagem2').style.clipPath = `inset(0 ${rect.width - xPos}px 0 0)`;
-//     setas.style.left = `${xPos}px`;
-// });
-
+//O QUE NOSSOS PARCEIROS ESTÃO FALANDO
 let count = 1;
 let intervalId = setInterval(nextImage, 5000);
 
@@ -50,4 +45,13 @@ function nextImage() {
     }
 
     document.getElementById("radio" + count).checked = true;
+}
+
+
+// BOTÃO VOLTAR AO TOPO
+function backTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
 }
