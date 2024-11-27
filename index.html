@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serviços de Usinagem, Corte, Solda, Projetos com 15% de desconto para novos cliente! | Power Usinagem">
     <title>Power | Bem-vindo!</title>
 
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
 
     <!-- Fontawesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -18,19 +19,25 @@
         <img src="./src/img/Captura de tela 2024-07-17 220352.png" class="logo" />
         <nav>
             <div class="pesquisa">
-                <b>
-                    <p class="value">
-                        <a class="aaa" href="./index.html">Início</a>
-                    </p>
-                    <p class="value">
-                        <a class="aaa" href="./sobre-nos.html">Sobre Nós</a>
-                    </p>
-                    <p class="value">
-                        <a class="aaa" href="">Serviços</a>
-                    </p>
-                    <p class="value">
-                        <a class="aaa" href="">Contato</a>
-                    </p>
+                <ul>
+                    <a href="./index.html" class="value">
+                        <li class="aaa">Início</li>
+                    </a>
+                    <a href="./sobre-nos.html" class="value">
+                        <li class="aaa" >Sobre Nós</li>
+                    </a>
+                    <li class="value drop-hover"> Serviços
+                        <div class="drop">
+                            <a href="./test.html">Usinagem</a>
+                            <a href="">Corte</a><br>
+                            <a href="">Solda</a>
+                            <a href="">Projetos</a>
+                        </div>
+                    </li>
+                    <a href="" class="value">
+                        <li class="aaa">Contato</li>
+                    </a>
+
                     <div class="elemento-verfical"></div>
                     <p class="valueT">
                         <i class="fas fa-phone"></i>
@@ -40,26 +47,24 @@
                         <i class="fab fa-whatsapp"></i>
                         (51) 91111-1111
                     </p>
-                </b>
+                </ul>
             </div>
             <hr />
         </nav>
     </header>
     <img src="./src/img/site-capaT1.png" class="fora-da-div" />
     <section class="antes-de-comecar">
-        <!-- <h1>BUSCAMOS SEMPRE A MÁXIMA QUALIDADE E EVOLUÇÃO TECNOLÓGICA</h1> -->
         <h1>SEMPRE BUSCANDO A MÁXIMA QUALIDADE E AGILIDADE PARA RESOLVER</h1>
         <div class="sub-script">
             <button class="saiba-empresa">─ Saiba Mais</button>
             <span class="atendimento">Atendimento personalizado às especificações dos clientes com versatilidade e
-                agilidade</span>
+            agilidade</span>
         </div>
     </section>
 
     <div class="gambiarra"></div>
 
     <main>
-
         <div class="whatsapp-container">
             <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">
                 <img src="./src/img/whatsapp-button.png" alt="WhatsApp">
@@ -81,10 +86,12 @@
             </div>
             <img src="./src/img/unnamed.jpg" class="usinagemCNC" />
         </section>
+
         <section class="faixa-orcamento">
             Procurando a melhor solução mecânica para o seu setor?
             <button class="orcamento">Falar com consultores</button>
         </section>
+
         <section class="servicos">
             <div class="em-ordem">
                 <figure class="cards">
@@ -132,6 +139,7 @@
                 </figure>
             </div>
         </section>
+
         <section class="clientes">
             <div class="nossos-clientes">Nossos Clientes</div>
             <div class="logos">

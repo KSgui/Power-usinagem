@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Power | Sobre nós</title>
 
-    <link rel="stylesheet" href="./src/sobre-nos.css">
+    <link rel="stylesheet" href="./src/css/sobre-nos.css">
 
     <!-- Fontawesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -25,9 +25,16 @@
                     <a href="./sobre-nos.html">
                         <li>Sobre nós</li>
                     </a>
-                    <a href="">
-                        <li>Serviços</li>
-                    </a>
+
+                    <li class="drop-hover">Serviços
+                        <div class="drop">
+                            <a href="./servicos-usinagem.html">Usinagem</a>
+                            <a href="">Corte</a><br>
+                            <a href="">Solda</a>
+                            <a href="">Projetos</a>
+                        </div>
+                    </li>
+                    
                     <a href="">
                         <li>Contato</li>
                     </a>
@@ -80,6 +87,7 @@
             </div>
             <img src="./src/img/empresa-predio.jpg" class="fotoReal">
         </section>
+
         <section class="enquadrando">
             <div class="nossa-historia">
                 <div class="sinopse1">
@@ -110,6 +118,7 @@
                 </div>
             </div>
         </section>
+
         <section class="valores">
             <figure class="cards">
                 <div class="icone">
@@ -147,6 +156,7 @@
                 </div>
             </figure>
         </section>
+
         <section class="oq-nossos-clientes-dizem">
             <div class="titulos-Mai-Min">
                 <h2 class="titulo-grande">O Que Nossos Parceiros</h2>
@@ -185,20 +195,15 @@
                     </div>
                 </div>
 
-
                 <div class="manual-navigation">
                     <label for="radio1" class="manual-btn"></label>
                     <label for="radio2" class="manual-btn"></label>
                     <label for="radio3" class="manual-btn"></label>
                     <label for="radio4" class="manual-btn"></label>
                 </div>
-
-            </div>
-            <div class="centralizar-botoes">
-                <button class="voltar"><<<</button>
-                <button class="passar">>>></button>
             </div>
         </section>
+
         <section class="politica-de-qualidade">
             <img src="./src/img/Política de qualidade.png" alt="Política de qualidade" class="aprovado">
             <div class="caixa-de-entrada">
@@ -217,6 +222,7 @@
                 </span>
             </div>
         </section>
+
     </main>
 
     <footer class="footer">
@@ -288,16 +294,7 @@
         </div>
     </footer>
 
-    <!-- <script>
-        function backTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            })
-        }
-    </script> -->
-
-    <script src="./sobre-nos.js"></script>
+    <script src="./src/javascript/sobre-nos.js"></script>
 </body>
 
 </html>

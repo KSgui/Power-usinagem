@@ -63,9 +63,49 @@ li:hover {
     background-color: #fff;
     width: 120px;
     padding: 5px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    color: rgb(255, 119, 0);
+
+    .drop{
+        display: block;
+        cursor: pointer;
+        transition: .9s;
+        text-align: center;
+    } 
+}
+
+.drop-hover{
+    position: relative;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.drop{
+    display: none;
+    position: absolute;
+    /* width: 100%; */
+    background-color: #fff;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 0px 0px 20px 20px;
+    font-family: "Oswald", sans-serif;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 36px;
+    height: 140px;
+}
+
+.drop a{
+    color: rgb(30, 59, 78);
+}
+
+.drop a:hover{
     color: rgb(255, 119, 0);
 }
+
 
 .orcamento {
     width: 180px;
@@ -509,31 +549,6 @@ input{
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: rgb(255, 119, 0);
 }
-
-.centralizar-botoes{
-    position: absolute;
-    display: flex;
-    width: 75%;
-    /* background-color: red; */
-    justify-content: space-between;
-    margin-top: 350px;
-}
-
-.voltar{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: none;
-    background-color: rgb(255, 119, 0);
-}
-
-.passar{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: none;
-    background-color: rgb(255, 119, 0);
-} 
 
 /* SESSÃO POLÍTICA DE QUALIDADE*/
 
