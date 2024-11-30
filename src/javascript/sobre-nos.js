@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
 
 //O QUE NOSSOS PARCEIROS ESTÃO FALANDO
 let count = 1;
-let intervalId = setInterval(nextImage, 5000);
+let intervalId = setInterval(nextImage, 7000);
 
 document.getElementById("radio1").checked = true;
 

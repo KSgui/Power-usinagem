@@ -1,33 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
-body{
+body {
     width: 100%;
 }
 
-header{
+header {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.logo{
-    width: 15%;
+.logo {
+    width: 12%;
     height: 100px;
     border-bottom-right-radius: 40px;
     backdrop-filter: blur(2px);
 }
 
-nav{
-    width: 85%;
+nav {
+    width: 88%;
     backdrop-filter: blur(2px);
 }
 
-.pesquisa{
+.pesquisa {
     width: 80%;
     display: flex;
     height: 100px;
@@ -39,7 +40,7 @@ nav{
 
 }
 
-ul{
+ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -48,7 +49,7 @@ ul{
     list-style-type: none;
 }
 
-.value{
+.value {
     cursor: pointer;
     transition: .3s;
     width: 10%;
@@ -63,7 +64,7 @@ ul{
     color: #fff;
 }
 
-.value:hover{
+.value:hover {
     background-color: #fff;
     color: rgb(255, 119, 0);
     cursor: pointer;
@@ -72,26 +73,26 @@ ul{
     margin: 10px;
     padding: 5px;
 
-    .aaa{
+    .aaa {
         color: rgb(255, 119, 0);
     }
 
-   .drop{
-    display: block;
-    cursor: pointer;
-    transition: .9s;
-    text-align: center;
-   } 
+    .drop {
+        display: block;
+        cursor: pointer;
+        transition: .9s;
+        text-align: center;
+    }
 
 }
 
-.drop-hover{
+.drop-hover {
     position: relative;
     text-align: center;
     border-radius: 20px 20px 0px 0px;
 }
 
-.drop{
+.drop {
     display: none;
     position: absolute;
     /* width: 100%; */
@@ -109,35 +110,35 @@ ul{
     height: 140px;
 }
 
-.drop a{
+.drop a {
     color: rgb(30, 59, 78);
 }
 
-.drop a:hover{
+.drop a:hover {
     color: rgb(255, 119, 0);
 }
 
 
-.aaa{
+.aaa {
     color: #fff;
     transition: .3s;
     display: block;
 }
 
 
-.elemento-verfical{
+.elemento-verfical {
     width: 2.5px;
     height: 50px;
     background-color: white;
 }
 
-hr{
+hr {
     background-color: white;
     height: 2px;
     border: none;
 }
 
-.fora-da-div{
+.fora-da-div {
     position: absolute;
     width: 100%;
     height: 650px;
@@ -148,36 +149,61 @@ hr{
     margin-top: -130px;
 }
 
-.antes-de-comecar{
+/* sessão antes-de-comecar */
+
+.antes-de-comecar {
     margin-top: 30px;
     width: 100%;
     height: 400px;
     font-family: "Oswald", sans-serif;
     display: flex;
     flex-direction: column;
-    /* background-color: aqua; */
+    /* animation: showSlow 0.8s linear 1 forwards;
+
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0; */
 }
 
-h1{
+
+.antes-de-comecar h1 {
     margin-top: 50px;
     width: 40%;
     margin-left: 150px;
     font-size: 50px;
     color: white;
+    animation: showSlow 0.4s linear 1 forwards;
+
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
 }
 
-.sub-script{
+@keyframes showSlow {
+    to {
+        transform: translateY(00px);
+        filter: blur(00px);
+        opacity: 1;
+    }
+}
+
+.sub-script {
     margin-top: 20px;
     width: 35%;
     height: 100px;
     margin-left: 150px;
     display: flex;
     font-family: "Oswald", sans-serif;
-    /* justify-content: flex-start; */
     align-items: center;
+
+    animation: showSlow 0.6s linear 1 forwards;
+
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
 }
 
-.saiba-empresa{
+.saiba-empresa {
     width: 180px;
     height: 70px;
     font-family: "Oswald", sans-serif;
@@ -191,38 +217,25 @@ h1{
     transition: .5s;
 }
 
-.saiba-empresa:hover{
+.saiba-empresa:hover {
     background-color: white;
     color: rgb(255, 119, 0);
 }
 
-.atendimento{
+.atendimento {
     margin-left: 40px;
     width: 200px;
     color: white;
     font-size: 18px;
-}
 
-/* animação inincial */
+    animation: showSlow 0.9s linear 1 forwards;
 
-body .antes-de-comecar:nth-child(1) h1,
-body .antes-de-comecar:nth-child(1) .saiba-empresa,
-body .antes-de-comecar:nth-child(1) .atendimento{
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
-    animation: showContent 0.5s 1s linear 1 forwards;
 }
 
-@keyframes showContent {
-    to{
-        transform: translateY(0px);
-        filter: blur(00px);
-        opacity: 1;
-    }
-}
-
-.gambiarra{
+.gambiarra {
     /* background-color: green; */
     width: 100%;
     height: 100px;
@@ -231,7 +244,10 @@ body .antes-de-comecar:nth-child(1) .atendimento{
     background-image: linear-gradient(to top, white, rgb(255, 234, 217), transparent);
 }
 
-.introducao{
+
+/* sessão introdução */
+
+.introducao {
     margin-top: 100px;
     height: 650px;
     width: 100%;
@@ -240,7 +256,7 @@ body .antes-de-comecar:nth-child(1) .atendimento{
     align-items: center;
 }
 
-.text-introducao{
+.text-introducao {
     width: 120%;
     height: 100%;
     display: flex;
@@ -250,7 +266,7 @@ body .antes-de-comecar:nth-child(1) .atendimento{
     margin-top: -20px;
 }
 
-h2{
+.text-introducao h2 {
     margin-top: -5px;
     margin-left: 10px;
     font-size: 90px;
@@ -258,9 +274,19 @@ h2{
     font-family: "Oswald", sans-serif;
     position: absolute;
     width: 50%;
+
+    animation: showSlide 0.7s linear 1 forwards;
+
+    transform: translateX(-450px);
 }
 
-.mini-logo{
+@keyframes showSlide {
+    to {
+        transform: translateX(00px);
+    }
+}
+
+.mini-logo {
     z-index: 1;
     margin-top: 65px;
     margin-left: 50px;
@@ -268,9 +294,13 @@ h2{
     font-weight: bold;
     color: rgb(255, 119, 0);
     font-size: 30px;
+
+    animation: showSlide 1s linear 1 forwards;
+
+    transform: translateX(-450px);
 }
 
-.divulga{
+.divulga {
     width: 80%;
     z-index: 1;
     margin-left: 50px;
@@ -281,7 +311,7 @@ h2{
     word-spacing: -3px;
 }
 
-.contexto{
+.contexto {
     color: gray;
     z-index: 1;
     margin: 10px 0px;
@@ -292,7 +322,7 @@ h2{
 
 }
 
-.saiba-empresa-em{
+.saiba-empresa-em {
     width: 180px;
     height: 70px;
     font-family: "Oswald", sans-serif;
@@ -309,14 +339,16 @@ h2{
     background-color: rgb(255, 119, 0);
 }
 
-.usinagemCNC{
+.usinagemCNC {
     width: 100%;
     height: 65%;
     border-top-left-radius: 230px;
     border-bottom-left-radius: 230px;
 }
 
-.faixa-orcamento{
+/* sessão faixa-orcamento */
+
+.faixa-orcamento {
     background-color: rgb(255, 119, 0);
     width: 100%;
     height: 160px;
@@ -330,7 +362,7 @@ h2{
     font-size: 35px;
 }
 
-.orcamento{
+.orcamento {
     margin-top: 15px;
     width: 220px;
     height: 50px;
@@ -345,11 +377,14 @@ h2{
     transition: all .4s ease;
 }
 
-.orcamento:hover{
+
+.orcamento:hover {
     scale: 1.2;
 }
 
-.servicos{
+/* sessão serviços */
+
+.servicos {
     margin-top: 20px;
     width: 100%;
     height: 500px;
@@ -358,7 +393,7 @@ h2{
     align-items: center;
 }
 
-.em-ordem{
+.em-ordem {
     width: 80%;
     height: 90%;
     display: grid;
@@ -367,9 +402,9 @@ h2{
     padding: 10px;
 }
 
-.cards{
+.cards {
     display: flex;
-    justify-content:end;
+    justify-content: end;
     flex-direction: column;
     background-color: rgb(255, 119, 0);
     align-items: center;
@@ -382,27 +417,27 @@ h2{
 
 }
 
-.usinando{
+.usinando {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.soldando{
+.soldando {
     width: 100%;
     height: 100%;
 }
 
-.projetando{
+.projetando {
     height: 100%;
     width: 100%;
 }
 
-.scale{
+.scale {
     transition: 3s;
 }
 
-.semi-card{
+.semi-card {
     background-color: rgba(128, 128, 128, 0.659);
     width: 100%;
     height: 60px;
@@ -410,12 +445,11 @@ h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     transition: .8s;
     position: absolute;
 }
 
-.sub-text{
+.sub-text {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -428,32 +462,37 @@ h2{
     color: #fff;
 }
 
-.ler-mais{
+.ler-mais {
     width: 40%;
     cursor: pointer;
     font-size: 20px;
 }
 
-.ler-mais:hover{
-    color: rgb(255, 119, 0);
+.direcionado{
+    color: #fff;
 }
 
-.cards:hover{
-    .scale{
+.direcionado:hover{
+    color: rgb(255, 119, 0);
+
+}
+
+.cards:hover {
+    .scale {
         scale: 1.1;
     }
 
-    .semi-card{
+    .semi-card {
         height: 100%;
     }
 
-    .sub-text{
+    .sub-text {
         margin-bottom: 10%;
         transition: 1s;
     }
 }
 
-.clientes{
+.clientes {
     width: 100%;
     height: 55vh;
     display: flex;
@@ -462,7 +501,7 @@ h2{
     background-color: rgb(219, 218, 218);
 }
 
-.nossos-clientes{
+.nossos-clientes {
     margin-top: 50px;
     color: rgb(255, 119, 0);
     font-size: 40px;
@@ -472,15 +511,16 @@ h2{
 }
 
 @keyframes slide {
-    from{
+    from {
         transform: translateX(0);
     }
-    to{
+
+    to {
         transform: translateX(-100%);
     }
 }
 
-.logos{
+.logos {
     overflow: hidden;
     padding: 60px 0;
     white-space: nowrap;
@@ -489,7 +529,7 @@ h2{
 }
 
 .logos:before,
-.logos:after{
+.logos:after {
     position: absolute;
     top: 0;
     width: 250px;
@@ -498,12 +538,12 @@ h2{
     z-index: 2;
 }
 
-.logos:before{
+.logos:before {
     left: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(219, 218, 218));
 }
 
-.logos:after{
+.logos:after {
     right: 0;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(219, 218, 218));
 }
@@ -512,14 +552,14 @@ h2{
     animation-play-state: paused;
 }
 
-.logos-slide{
+.logos-slide {
     margin-top: -25px;
     height: 300px;
-    display: inline-block ;
+    display: inline-block;
     animation: 15s slide infinite linear;
 }
 
-.padrao{
+.padrao {
     height: 150px;
     width: 250px;
     margin: 30px;
@@ -533,12 +573,12 @@ h2{
     transition: filter 0.5s ease;
 }
 
-.padrao:hover{
+.padrao:hover {
     border: 3px solid rgb(255, 119, 0);
     filter: grayscale(0%);
 }
 
-.injetal-ultramax{
+.injetal-ultramax {
     width: 200px;
 }
 
@@ -568,7 +608,7 @@ footer {
     align-items: center;
 }
 
-.informacao-final{
+.informacao-final {
     height: 220px;
     padding: 40px;
     display: flex;
@@ -576,26 +616,26 @@ footer {
     font-family: "Oswald", sans-serif;
 }
 
-.breve-introducao{
+.breve-introducao {
     width: 22%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-h3{
+h3 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 5px;
 }
 
-.mini-logo-foto{
+.mini-logo-foto {
     width: 180px;
     height: 120px;
     border-radius: 10px;
 }
 
-.mini-texto{
+.mini-texto {
     margin-top: 10px;
     padding: 0 10px;
     font-size: 16px;
@@ -603,7 +643,7 @@ h3{
     text-align: justify;
 }
 
-.espaco-tempo{
+.espaco-tempo {
     width: 22%;
     display: flex;
     flex-direction: column;
@@ -611,33 +651,33 @@ h3{
     align-items: center;
 }
 
-.endereco-top{
+.endereco-top {
     margin-left: -150px;
 }
 
-.local{
+.local {
     font-size: 16px;
     font-weight: 400;
     text-align: justify;
     margin-left: -70px;
 }
 
-.horario-top{
+.horario-top {
     margin-top: 20px;
     margin-left: -160px;
 }
 
-.contato{
+.contato {
     width: 22%;
 }
 
-.contatos{
+.contatos {
     font-size: 16px;
     font-weight: 400;
     text-align: justify;
 }
 
-.redes-sociais{
+.redes-sociais {
     width: 100%;
     height: 40%;
     margin-top: 20px;
@@ -647,11 +687,11 @@ h3{
 
 }
 
-.social{
+.social {
     margin-left: -58%;
 }
 
-.centralizado{
+.centralizado {
     width: 100%;
     height: 100%;
     display: flex;
@@ -659,7 +699,7 @@ h3{
     align-items: center;
 }
 
-.icon{
+.icon {
     width: 60px;
     height: 60px;
     margin: 0 8px;
@@ -674,50 +714,54 @@ h3{
     text-decoration: none;
 }
 
-.icon:nth-child(1){
+.icon:nth-child(1) {
     background-color: #4267B2;
 }
-.icon:nth-child(1):hover{
+
+.icon:nth-child(1):hover {
     color: #4267B2;
     background-color: #fff;
 }
 
-.icon:nth-child(2){
+.icon:nth-child(2) {
     background-color: #E1306C;
 }
-.icon:nth-child(2):hover{
+
+.icon:nth-child(2):hover {
     color: #E1306C;
     background-color: #FFF;
 }
 
 
-.icon:nth-child(3){
+.icon:nth-child(3) {
     background-color: #0077B5;
 }
-.icon:nth-child(3):hover{
+
+.icon:nth-child(3):hover {
     color: #0077B5;
     background-color: #FFF;
 }
 
-.icon:nth-child(4){
+.icon:nth-child(4) {
     background-color: #FF0000;
 }
-.icon:nth-child(4):hover{
+
+.icon:nth-child(4):hover {
     color: #FF0000;
     background-color: #FFF;
 }
 
-.button-topo{
+.button-topo {
     width: 16%;
     padding: 30px 0;
     display: flex;
-    align-items:end;
+    align-items: end;
     justify-content: center;
     cursor: pointer;
     transition: all .4s ease;
 }
 
-.voltar-ao-topo{
+.voltar-ao-topo {
     margin-top: 120px;
     width: 100%;
     height: 60px;
@@ -762,7 +806,8 @@ h3{
     padding: 5px 10px;
     position: absolute;
     z-index: 1;
-    bottom: 10px; /* Ajuste conforme necessário */
+    bottom: 10px;
+    /* Ajuste conforme necessário */
     left: -205%;
     transform: translateX(-50%);
     white-space: nowrap;

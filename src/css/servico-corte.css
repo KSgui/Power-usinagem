@@ -228,10 +228,17 @@ li:hover {
 
 .slider .list .item .content .type{
     color: rgb(255, 119, 0);
+    text-shadow: 0 5px 10px #0004;
 }
 
 .slider .list .item .content .description{
     font-size: 18px;
+    color: #fff;
+    /* text-shadow: 1px 1px 0 rgb(255, 119, 0), -1px -1px 0 rgb(255, 119, 0),
+    1px -1px 0 rgb(255, 119, 0), -1px 1px 0 rgb(255, 119, 0); */
+
+    text-shadow: 1px 1px 0 #9c9c9c, -1px -1px 0 #9c9c9c,
+    1px -1px 0 #9c9c9c, -1px 1px 0 #9c9c9c;
 }
 
 .slider .list .item .content .button{
