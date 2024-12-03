@@ -202,6 +202,23 @@ li:hover {
     font-weight: 400;
 }
 
+.marcandoTitulo{
+    animation: showSlow 0.8s linear 1 forwards;
+
+
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+}
+
+@keyframes showSlow {
+    to {
+        transform: translateY(00px);
+        filter: blur(00px);
+        opacity: 1;
+    }
+}
+
 .sub-text {
     color: #fff;
     font-size: 30px;
