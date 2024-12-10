@@ -1,51 +1,239 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power|Contato</title>
+    <title>Power | Contato</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="website icon" type="png" href="./src/img/Captura_de_tela_2024-08-09_193405-removebg-preview.png" />
+
+    <link rel="stylesheet" href="./src/css/contato.css">
 </head>
+
 <body>
     <header>
-        <header>
-            <nav>
-                <img src="./src/img/power-usinagem-remove.png" alt="logo" class="logo-power">
-                <div class="topicos">
-                    <ul class="lista-topicos">
-                        <a href="./index.html">
-                            <li>Início</li>
-                        </a>
-                        <a href="./sobre-nos.html">
-                            <li>Sobre nós</li>
-                        </a>
-                        <a href="">
-                            <li>Serviços</li>
-                        </a>
-                        <a href="">
-                            <li>Contato</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="nossas-redes">
-                    <a href="#" class="icon02">
-                        <i class="fab fa-facebook-f v2"></i>
+        <nav>
+            <img src="./src/img/power-usinagem-remove.png" alt="logo" class="logo-power">
+            <div class="topicos">
+                <ul class="lista-topicos">
+                    <a href="./index.html">
+                        <li>Início</li>
                     </a>
-                    <a href="#" class="icon02">
-                        <i class="fab fa-instagram v2"></i>
+                    <a href="./sobre-nos.html">
+                        <li>Sobre nós</li>
                     </a>
-                    <a href="#" class="icon02">
-                        <i class="fab fa-linkedin v2"></i>
+
+                    <li class="drop-hover">Serviços
+                        <div class="drop">
+                            <a href="./servicos-usinagem.html">Usinagem</a>
+                            <a href="./servicos-corte.html">Corte</a><br>
+                            <a href="./servicos-soldagem.html">Solda</a><br>
+                            <a href="./servicos-projetos.html">Projetos</a>
+                        </div>
+                    </li>
+
+                    <a href="./contato.html">
+                        <li>Contato</li>
                     </a>
-                    <a href="#" class="icon02">
-                        <i class="fab fa-youtube v2"></i>
-                    </a>
-                </div>
-            </nav>
+                </ul>
+            </div>
+
+            <div class="nossas-redes">
+                <a href="#" class="icon02">
+                    <i class="fab fa-facebook-f v2"></i>
+                </a>
+                <a href="#" class="icon02">
+                    <i class="fab fa-instagram v2"></i>
+                </a>
+                <a href="#" class="icon02">
+                    <i class="fab fa-linkedin v2"></i>
+                </a>
+                <a href="#" class="icon02">
+                    <i class="fab fa-youtube v2"></i>
+                </a>
+            </div>
+        </nav>
     </header>
-    <main></main>
-    <footer></footer>
+
+    <main>
+        <section class="textoECapa">
+            <div class="TituloTexto">
+                <div class="caixaDePalavras">
+                    <h1 class="contatoP">Contato</h1>
+
+                    <span class="textoDeAbertura">Entre em contato com a Power Usinagem agora mesmo, será uma prazer lhe
+                        atender!</span>
+                </div>
+            </div>
+            <img src="./src/img/recepcao-powerusinagem.webp" class="capa">
+        </section>
+
+        <section class="faleConosco">
+            <div class="informacaoExtra">
+                <h3 class="fale">fale conosco!</h3>
+
+                <h1 class="atendimento">Nossa equipe está disponível para te responder o mais rápido possível.
+                    
+                </h1>
+
+                <p class="horario">Nosso horário de atendimento é de segunda-feira a quinta-feira das 7:30 às 17:30 e sexta-feira das 7:30 às 16:30.
+                </p>
+                <hr />
+
+                <div class="adicionais">
+                    <button class="icone"><i class="fas fa-map-marker-alt"></i></button>
+                    <span class="paraFrases">
+                        <h2 class="tituloGrande">Endereço</h2>
+                        <p class="frasePequena">
+                            Bairro Feitoria - São Leopoldo
+                        </p>
+                    </span>
+                </div>
+                <div class="adicionais">
+                    <button class="icone"><i class="fab fa-whatsapp"></i></button>
+                    <span class="paraFrases">
+                        <h2 class="tituloGrande">Telefone e WhatsApp</h2>
+                        <p class="frasePequena">
+                            (51) 0000-0000 | (51) 91111-1111
+                        </p>
+                    </span>
+                </div>
+                <div class="adicionais">
+                    <button class="icone"><i class="fas fa-envelope mr-2"></i></button>
+                    <span class="paraFrases">
+                        <h2 class="tituloGrande">E-mail</h2>
+                        <p class="frasePequena">
+                            comercial@powerusinagem.com.br
+                        </p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="formulario">
+                <div class="form-container">
+                    <form class="form-center" action="https://formspree.io/f/xyyqovwd" method="POST">
+                        <h1 class="titulo">Deixe sua mensagem</h1>
+                        <p class="breveDeclaracao">Preencha o formulário abaixo, ligue para nós ou envie um e-mail. Teremos prazer em ajudar e oferecer a melhor solução para suas necessidades.
+                        </p>
+                        <div class="emOrndem">
+                            <label>
+                                Nome:
+                                <input class="you" type="text" name="name" pattern="[a-z]*">
+                            </label>
+                            <label>
+                                Empresa:
+                                <input class="empresa" type="text" name="name" pattern="[a-z]*">
+                            </label>
+                            <label>
+                                Telefone:
+                                <input class="numb" type="text" name="fone" pattern="[0-9]*">
+                            </label>
+                            <label>
+                                Email:
+                                <input type="email" name="email">
+                            </label>
+                        </div>
+                        <label>
+                            Deixe uma mensagem:
+                            <textarea name="message"></textarea>
+                        </label>
+                        <button class="enviar" type="submit">
+                            Enviar!
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="localizacao">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27711.55871411686!2d-51.120601422148695!3d-29.750309554638683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95196985d014f37d%3A0xe66067ef2abc53a1!2sFeitoria%2C%20S%C3%A3o%20Leopoldo%20-%20RS!5e0!3m2!1spt-BR!2sbr!4v1733275154840!5m2!1spt-BR!2sbr"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <div class="whatsapp-container">
+            <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">
+                <img src="./src/img/whatsapp-button.png" alt="WhatsApp">
+            </a>
+            <span class="whatsapp-tooltip">Olá, no que podemos ajudá-lo?</span>
+        </div>
+
+
+        <div class="button-topo">
+            <button class="voltar-ao-topo" onclick="backTop()">
+                <img src="./src/img/seta-para-cima01.png" alt="">
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100"
+        preserveAspectRatio="none">
+        <path class="footer-wave-path"
+            d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z">
+        </path>
+    </svg>
+    <div class="informacao-final">
+        <div class="breve-introducao">
+            <img src="./src/img/Captura de tela 2024-07-17 210220.png" class="mini-logo-foto">
+            <span class="mini-texto">A Power Usinagem fica localizada em São Leopoldo e oferece serviços de
+                usinagem, metalúrgica, desenvolvimento de projetos e fabricação de máquinas.</span>
+        </div>
+        <div class="espaco-tempo">
+            <h3 class="endereco-top">
+                <i class="fas fa-map-marker-alt"></i>
+                Endereço
+            </h3>
+            <span class="local">
+                Avenida Integração</br>
+                Feitoria</br>
+                São Leopoldo - RS
+            </span>
+
+            <h3 class="horario-top">
+                <i class="fas fa-regular fa-clock"></i>
+                Horário
+            </h3>
+            <span class="horario-top1">
+                Segunda à quinta das 7:00h às 17:30h</br>
+                Sexta-feira das 7:00h às 16:30h
+            </span>
+        </div>
+        <div class="contato">
+            <h3>Contato</h3>
+            <span class="contatos">
+                <i class="fas fa-phone"></i> Telefone (51) 0000-0000</br>
+                <i class="fab fa-whatsapp"></i> WhatsApp (51) 91111-1111</br>
+                <i class="fas fa-envelope mr-2"></i> comercial@powerusinagem.com.br
+            </span>
+
+            <!-- Fontawesome cdn link -->
+            <figure class="redes-sociais">
+                <h3 class="social">SIGA NAS REDES</h3>
+                <div class="centralizado">
+                    <a href="#" class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </figure>
+        </div>
+
+    </div>
+    </footer>
+    <script src="./src/javascript/contato.js"></script>
 </body>
+
 </html>

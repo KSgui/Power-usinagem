@@ -1,0 +1,747 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*   NAVEGAÇÃO    */
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    backdrop-filter: blur(2px);
+    height: 80px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo-power {
+    height: 100%;
+}
+
+.topicos {
+    width: 35%;
+    height: 90%;
+    display: flex;
+}
+
+.lista-topicos {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+li {
+    cursor: pointer;
+    transition: .3s;
+    width: 120px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 20px;
+    border: none;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+}
+
+li:hover {
+    background-color: #fff;
+    width: 120px;
+    padding: 5px;
+    color: rgb(255, 119, 0);
+
+    .drop{
+        display: block;
+        cursor: pointer;
+        transition: .9s;
+        text-align: center;
+    } 
+}
+
+.drop-hover{
+    position: relative;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.drop{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 0px 0px 20px 20px;
+    font-family: "Oswald", sans-serif;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 36px;
+    height: 140px;
+}
+
+.drop a{
+    color: rgb(30, 59, 78);
+}
+
+.drop a:hover{
+    color: rgb(255, 119, 0);
+}
+
+.nossas-redes {
+    width: 20%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.icon02 {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+}
+
+.icon02:nth-child(1){
+    background-color: #0077B5;
+}
+.icon02:nth-child(1):hover{
+    color: #4267B2;
+    background-color: #fff;
+}
+
+.icon02:nth-child(2){
+    background-color: #E1306C;
+}
+.icon02:nth-child(2):hover{
+    color: #E1306C;
+    background-color: #FFF;
+}
+
+
+.icon02:nth-child(3){
+    background-color: #0077B5;
+}
+.icon02:nth-child(3):hover{
+    color: #0077B5;
+    background-color: #FFF;
+}
+
+.icon02:nth-child(4){
+    background-color: #FF0000;
+}
+.icon02:nth-child(4):hover{
+    color: #FF0000;
+    background-color: #FFF;
+}
+
+.icon02:hover {
+    background-color: white;
+
+    .fa-facebook-f {
+        color: #0077B5;
+    }
+
+    .fa-instagram {
+        color: #E1306C;
+    }
+
+    .fa-linkedin {
+        color: #4267B2;
+    }
+
+    .fa-youtube {
+        color: #FF0000;
+    }
+}
+
+.v2 {
+    color: #fff;
+    padding: 0 10px;
+}
+
+/* sessão textoECapa */
+
+.textoECapa{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background-color: #1e3a5f;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.TituloTexto{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.capa{
+    width: 60%;
+    height: 100%;
+}
+
+.caixaDePalavras{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    font-family: "Oswald", sans-serif;
+}
+
+.contatoP{
+    color: rgb(255, 119, 0);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.textoDeAbertura{
+    font-size: 22px;
+    color: #fff;
+}
+
+/* sessão faleConosco */
+
+.faleConosco{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    font-family: "Oswald", sans-serif;
+}
+
+.informacaoExtra{
+    width: 40%;
+    height: 85%;
+    padding: 20px;
+}
+
+.fale{
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: rgb(255, 119, 0);
+    font-weight: 500;
+}
+
+.atendimento{
+    margin-top: 15px;
+    font-size: 40px;
+    line-height: 1.1;
+    color: #1e3a5f;
+}
+
+.horario{
+    margin-top: 15px;
+    font-size: 20px;
+    color: gray;
+}
+
+hr{
+    margin-top: 20px;
+    background-color: rgb(255, 119, 0);
+    height: 2px;
+    border: none;
+}
+
+.adicionais{
+    margin-top: 10px;
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+.icone{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin:0 30px 0 20px;
+    border: none;
+    background-color: rgb(255, 119, 0);
+}
+
+.icone i{
+    font-size: 30px;
+    color: #fff;
+}
+
+.tituloGrande{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: rgb(255, 119, 0);
+}
+
+.frasePequena{
+    color: gray;
+}
+
+/* edição do formulário */
+.formulario{
+    width: 50%;
+    height: 90%;
+}
+
+.form-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    background-color: #1e3a5f;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.titulo{
+    margin-left: 60px;
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(255, 119, 0);
+}
+
+.breveDeclaracao{
+    margin-top: -20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.emOrndem{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    color: rgb(255, 119, 0);
+}
+
+label{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 119, 0);
+}
+
+input{
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.9s all ease-in-out;
+    margin-top: 5px;
+    outline: none;
+    font-size: 20px;
+    border: none;
+    padding: 5px;
+}
+
+input:hover{
+    scale: 1.1;
+}
+
+.you:invalid{
+    border: 1px solid #e70707;
+    animation: invalid 0.3s 2;
+    color: #e70707;
+}
+
+@keyframes invalid{
+    25%{
+        translate: 6px 0;
+    }
+    50%{
+        translate: -6px 0;
+    }
+    75%{
+        translate: 6px 0;
+    }
+}
+
+.numb:invalid{
+    border: solid #e70707;
+    animation: invalid 0.3s 2;
+    color: #e70707;
+}
+
+@keyframes invalid{
+    25%{
+        translate: 6px 0;
+    }
+    50%{
+        translate: -6px 0;
+    }
+    75%{
+        translate: 6px 0;
+    }
+}
+
+textarea{
+    color: rgb(255, 119, 0);
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 180px;
+    min-height: 180px;
+    border-radius: 8px;
+    padding: 5px;
+
+}
+
+.enviar{
+    font-family: 'Oswald', sans-serif;
+    width: 50%;
+    border: none;
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-top: -10px;
+    transition: 0.2s;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(255, 119, 0);
+}
+
+.enviar:hover{
+    box-shadow: 0 0 0 4px #fff,
+    0 0 0 8px rgb(255, 119, 0);
+    color: #fff;
+}
+
+/* sessão localização */
+
+.localizacao{
+    width: 100%;
+    height: 400px;
+}
+
+.localizacao iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* footer*/
+
+footer {
+    margin-top: 20px;
+    background-color: rgb(255, 119, 0);
+    color: #fff;
+    height: 350px;
+}
+
+.footer-wave-svg {
+    background-color: transparent;
+    display: block;
+    height: 30px;
+    position: relative;
+    top: -1px;
+    width: 100%;
+}
+
+.footer-wave-path {
+    fill: #fff;
+}
+
+.footer-content {
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.informacao-final {
+    height: 220px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Oswald", sans-serif;
+}
+
+.breve-introducao {
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.mini-logo-foto {
+    width: 180px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.mini-texto {
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.espaco-tempo {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+}
+
+.endereco-top {
+    margin-left: -150px;
+}
+
+.local {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    margin-left: -70px;
+}
+
+.horario-top {
+    margin-left: -160px;
+    margin-top: 20px;
+}
+
+.contato {
+    width: 22%;
+}
+
+.contatos {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.redes-sociais {
+    width: 100%;
+    height: 40%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.social {
+    margin-left: -58%;
+}
+
+.centralizado {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 8px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 58px;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.4s ease;
+    background-color: #FF0000;
+    text-decoration: none;
+}
+
+.icon:nth-child(1) {
+    background-color: #4267B2;
+}
+
+.icon:nth-child(1):hover {
+    color: #4267B2;
+    background-color: #fff;
+}
+
+.icon:nth-child(2) {
+    background-color: #E1306C;
+}
+
+.icon:nth-child(2):hover {
+    color: #E1306C;
+    background-color: #FFF;
+}
+
+
+.icon:nth-child(3) {
+    background-color: #0077B5;
+}
+
+.icon:nth-child(3):hover {
+    color: #0077B5;
+    background-color: #FFF;
+}
+
+.icon:nth-child(4) {
+    background-color: #FF0000;
+}
+
+.icon:nth-child(4):hover {
+    color: #FF0000;
+    background-color: #FFF;
+}
+
+/* botão para cima */
+
+.button-topo {
+    outline: none;
+    border: none;
+    width: 70px;
+    height: 70px;
+    padding: 6px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 120px;
+    z-index: 100;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: all .4s ease;
+}
+
+.button-topo.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.voltar-ao-topo{
+    width: 60px;
+    height: 60px;
+    padding: 6px;
+    border-radius: 50%;
+    border: none;
+}
+
+.voltar-ao-topo img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+/* botão do whatsapp */
+
+.whatsapp-container {
+    position: fixed;
+    display: inline-block;
+    margin-left: 94%;
+    bottom: 5%;
+    z-index: 10;
+
+}
+
+.whatsapp-btn img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.whatsapp-tooltip {
+    visibility: hidden;
+    height: 40px;
+    width: 250px;
+    background-color: #01cb4b;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    /* Ajuste conforme necessário */
+    left: -225%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.whatsapp-tooltip::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #01cb4b;
+    bottom: 12px;
+    left: 100%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: opacity 0.3s;
+}
+
+.whatsapp-container:hover .whatsapp-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+*::-webkit-scrollbar {
+    width: 17px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1e9e9;
+    border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 119, 0);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
