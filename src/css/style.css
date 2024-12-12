@@ -17,14 +17,14 @@ header {
 }
 
 .logo {
-    width: 12%;
+    width: 270px;
     height: 100px;
     border-bottom-right-radius: 40px;
     backdrop-filter: blur(2px);
 }
 
 nav {
-    width: 88%;
+    width: 100%;
     backdrop-filter: blur(2px);
 }
 
@@ -187,7 +187,7 @@ hr {
     }
 }
 
-.antes-de-comecar h1::selection { 
+.antes-de-comecar h1::selection {
     background: rgb(30, 59, 78);
     color: rgb(255, 119, 0);
 }
@@ -240,7 +240,7 @@ hr {
     opacity: 0;
 }
 
-.atendimento::selection { 
+.atendimento::selection {
     background: rgb(30, 59, 78);
     color: rgb(255, 119, 0);
 }
@@ -478,11 +478,11 @@ hr {
     font-size: 20px;
 }
 
-.direcionado{
+.direcionado {
     color: #fff;
 }
 
-.direcionado:hover{
+.direcionado:hover {
     color: rgb(255, 119, 0);
 
 }
@@ -783,12 +783,12 @@ h3 {
     transform: all .4s ease;
 }
 
-.button-topo.active{
+.button-topo.active {
     opacity: 1;
     visibility: visible;
 }
 
-.voltar-ao-topo{
+.voltar-ao-topo {
     width: 60px;
     height: 60px;
     padding: 6px;
@@ -796,7 +796,7 @@ h3 {
     border: none;
 }
 
-.voltar-ao-topo img{
+.voltar-ao-topo img {
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -806,12 +806,18 @@ h3 {
 /* botão do whatsapp */
 
 .whatsapp-container {
+    width: 60px;
+    height: 60px;
+    padding: 6px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    display: inline-block;
-    margin-left: 94%;
-    bottom: 5%;
-    z-index: 10;
-
+    right: 30px;
+    bottom: 40px;
+    z-index: 100;
+    cursor: pointer;
 }
 
 .whatsapp-btn img {
@@ -836,8 +842,7 @@ h3 {
     position: absolute;
     z-index: 1;
     bottom: 10px;
-    /* Ajuste conforme necessário */
-    left: -205%;
+    left: -120px;
     transform: translateX(-50%);
     white-space: nowrap;
     font-size: 18px;
@@ -852,7 +857,7 @@ h3 {
     width: 15px;
     background-color: #01cb4b;
     bottom: 15px;
-    left: 100%;
+    left: 220px;
     transform: translate(-50%) rotate(45deg);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: opacity 0.3s;
@@ -876,4 +881,176 @@ h3 {
     background-color: rgb(255, 119, 0);
     border-radius: 10px;
     border: 3px solid #ffffff;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 450px) {
+
+    /* header */
+    .logo {
+        width: 180px;
+    }
+    nav {
+        display: none;
+    }
+
+    /* sessão antes-de-comecar */
+    .antes-de-comecar{
+        margin-left: -100px;
+    }
+    .antes-de-comecar h1 {
+        width: 70%;
+        font-size: 30px;
+    }
+    .sub-script {
+        width: 80%;
+    }
+    .saiba-empresa{
+        font-size: 18px;
+        width: 35%;
+    }
+    .atendimento {
+        width: 40%;
+        font-size: 18px;
+    }
+
+    /* sessão introdução  */
+    .introducao{
+        height: 670px;
+    }
+    .usinagemCNC{
+        display: none;
+    }
+
+    .text-introducao h2{
+        margin-top: 20px;
+        width: 100%;
+        font-size:50px;
+    }
+
+    .mini-logo{
+        margin-top: 60px;
+    }
+
+    .divulga{
+        font-size: 30px;
+    }
+
+    .saiba-empresa-em{
+        width: 50%;
+        height: 40px;
+    }
+
+    /* sessão faixa-orcamento */
+    .faixa-orcamento{
+        margin-top: 30px;
+        font-size: 20px;
+        display: flex;
+        text-align: center;
+    }
+
+    /* sessão servicos */
+    .servicos{
+        height: auto;
+    }
+    .em-ordem{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .cards{
+        height: 400px;
+    }
+
+    .sub-text{
+        margin-bottom: -80%;
+    }
+
+    .cortando{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* sessão clientes */
+    .clientes{
+        height: auto;
+    }
+    .logos-slide{
+        height: 270px;
+    }
+    .padrao{
+        height: 120px;
+        width: 200px;
+    }
+    
+    .logos{
+        padding: 30px 0;
+    }
+
+    .logos:before{
+        width: 80px;
+    }
+
+    .logos:after{
+        width: 80px;
+    }
+
+    /* botão button-topo */
+
+    /* .button-topo{
+        right: 70px;
+    } */
+
+    .voltar-ao-topo{
+        width: 40px;
+        height: 40px;
+    }
+
+    /* botão whatsapp */
+    /* .whatsapp-container{
+        right: 70px;
+    } */
+
+    .whatsapp-btn img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .whatsapp-tooltip{
+        display: none;
+    }
+
+    /* footer */
+
+    footer{
+        height: 1000px;
+    }
+
+    .informacao-final{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        gap: 40px;
+    }
+
+    .breve-introducao{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mini-texto{
+        display: none;
+    }
+
+    .espaco-tempo{
+        width: 80%;
+        
+    }
+
+    .contato{
+        width: 80%;
+    }
 }

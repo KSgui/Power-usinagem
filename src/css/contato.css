@@ -674,12 +674,18 @@ h3 {
 /* botão do whatsapp */
 
 .whatsapp-container {
+    width: 60px;
+    height: 60px;
+    padding: 6px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    display: inline-block;
-    margin-left: 94%;
-    bottom: 5%;
-    z-index: 10;
-
+    right: 30px;
+    bottom: 40px;
+    z-index: 100;
+    cursor: pointer;
 }
 
 .whatsapp-btn img {
