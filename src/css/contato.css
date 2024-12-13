@@ -751,3 +751,119 @@ h3 {
     border-radius: 10px;
     border: 3px solid #ffffff;
 }
+
+@media screen and (max-width: 450px){
+    /* header */
+    .logo-power {
+        width: 200px;
+    }
+    .topicos, .orcamento, .nossas-redes {
+        display: none;
+    }
+
+    /* sessão textoCapa */
+    .textoECapa{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .capa{
+        width: 100%;
+        height: 600px;
+    }
+
+    .TituloTexto{
+        height: 300px;
+        width: 100%;
+    }
+
+    .faleConosco{
+        display: flex;
+        flex-direction: column;
+        height: 1500px;
+    }
+
+    .informacaoExtra{
+        width: 100%;
+    }
+
+    .formulario{
+        width: 90%;
+    }
+
+    .titulo{
+        font-size: 35px;
+        margin-left: 0;
+    }
+
+    .localizacao{
+        margin-top: 40px;
+    }
+
+    footer{
+        height: 800px;
+    }
+
+    .informacao-final{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .breve-introducao{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mini-texto{
+        display: none;
+    }
+
+    .espaco-tempo{
+        width: 80%;
+    }
+
+    .contato{
+        width: 80%;
+    }
+
+    .centralizado{
+        margin-top: 10px;
+    }
+
+    .endereco-top{
+        color: rgb(30, 59, 78);
+        font-weight: bold;
+    }
+
+    .local{
+        margin-left: -110px;
+        font-size: 18px;
+    }
+
+    .horario-top{
+        color: rgb(30, 59, 78);
+        font-weight: bold;
+    }
+
+    .horario{
+        font-size: 18px;
+    }
+
+    .contato h3{
+        color: rgb(30, 59, 78);
+    }
+
+    .redes-sociais{
+        margin-left: -40px;
+    }
+
+    .redes-sociais .social{
+        color: #fff;
+    }
+}

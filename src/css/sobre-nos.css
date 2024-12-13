@@ -910,3 +910,194 @@ h3{
     border-radius: 10px;
     border: 3px solid #ffffff;
 }
+
+@media screen and (max-width: 450px){
+
+    /* header */
+    .logo-power {
+        width: 200px;
+    }
+    .topicos, .orcamento, .nossas-redes {
+        display: none;
+    }
+
+    /* sessão adaptando */
+    .adaptando{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+    }
+    
+    .fotoReal{
+        width: 100%;
+        height: 600px;
+    }
+
+    .infeite{
+        height: 600px;
+        width: 100%;
+    }
+
+    .proximo{
+        display: none;
+    }
+
+    /* sessão enquadrando */
+    .enquadrando{
+        height: 1900px;
+    }
+
+    .nossa-historia{
+        height: 1850px; 
+    }
+
+    .onde-tudo-comecou{
+        font-size: 40px;
+    }
+
+    .mini-logo{
+        margin-top:80px;
+    }
+
+    .contexto{
+        width: 100%;
+    }
+
+    .adp{
+        margin-top: 600px;
+    }
+
+    #antes-depois{
+        width: 100%;
+        margin-top: 590px;
+        margin-left: 0;
+    }
+
+    /* sessão valores */
+    .valores{
+        display: flex;
+        flex-direction: column;
+        height: 1100px;
+    }
+    .cards{
+        margin-top: -50px;
+    }
+    .cards:hover{
+        scale: 1;
+    }
+
+    .icone{
+        margin-top: -260px;
+    }
+
+    .descricao{
+        width: 350px;
+        height: 250px;
+    }
+
+    /* sessão oq-nossos-clientes-dizem */
+
+    .oq-nossos-clientes-dizem{
+        height: 700px;
+    }
+
+    .titulo-grande{
+        font-size: 40px;
+        margin-left: 20px;
+    }
+
+    .caixa-de-depoimentos{
+        width: 100%;
+    }
+
+    /* sessão politica-de-qualidade */
+    .politica-de-qualidade{
+        display: flex;
+        flex-direction: column;
+        height: 1350px;
+    }
+
+    .aprovado{
+        width: 100%;
+        height: 400px;
+    }
+
+    .caixa-de-entrada{
+        width: 100%;
+        height: 1000px;
+    }
+
+    footer{
+        height: 800px;
+    }
+
+    .footer-wave-svg{
+        background-color: rgb(255, 119, 0);
+    }
+
+    .footer-wave-path {
+        fill: #1e3a5f;
+    }
+
+    .informacao-final{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .breve-introducao{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mini-texto02{
+        display: none;
+    }
+
+    .espaco-tempo{
+        width: 80%;
+    }
+
+    .contato{
+        width: 80%;
+    }
+
+    .centralizado{
+        margin-top: 10px;
+    }
+
+    .endereco-top{
+        color: rgb(30, 59, 78);
+        font-weight: bold;
+    }
+
+    .local{
+        margin-left: -110px;
+        font-size: 18px;
+    }
+
+    .horario-top{
+        color: rgb(30, 59, 78);
+        font-weight: bold;
+    }
+
+    .horario{
+        font-size: 18px;
+    }
+
+    .contato h3{
+        color: rgb(30, 59, 78);
+    }
+
+    .redes-sociais{
+        margin-left: -40px;
+    }
+
+    .redes-sociais .social{
+        color: #fff;
+    }
+}

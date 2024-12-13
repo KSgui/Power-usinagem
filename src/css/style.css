@@ -7,7 +7,7 @@
 }
 
 body {
-    width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -27,6 +27,55 @@ nav {
     width: 100%;
     backdrop-filter: blur(2px);
 }
+
+/* navegação mobile INICIO*/
+.navegacao-mobile {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    margin-left: 70px;
+    background: transparent;
+    height: 8vh;
+    z-index: 100;
+}
+
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-list li a:hover {
+    opacity: 0.7;
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+/* navegação mobile FIM*/
 
 .pesquisa {
     width: 80%;
@@ -886,64 +935,128 @@ h3 {
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 450px) {
-
+    
     /* header */
     .logo {
         width: 180px;
     }
+
     nav {
         display: none;
     }
 
+    .navegacao-mobile {
+        display: flex;
+        color:rgb(30, 59, 78);
+    }
+
+    .nav-list {
+        position:absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 30vh;
+        background: rgb(30, 59, 78);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        /* margin-left: 0; */
+        opacity: 0;
+        margin-top: 40px;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
+
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
     /* sessão antes-de-comecar */
-    .antes-de-comecar{
+    .antes-de-comecar {
         margin-left: -100px;
     }
+
     .antes-de-comecar h1 {
         width: 70%;
         font-size: 30px;
     }
+
     .sub-script {
         width: 80%;
     }
-    .saiba-empresa{
+
+    .saiba-empresa {
         font-size: 18px;
         width: 35%;
     }
+
     .atendimento {
         width: 40%;
         font-size: 18px;
     }
 
     /* sessão introdução  */
-    .introducao{
+    .introducao {
         height: 670px;
     }
-    .usinagemCNC{
+
+    .usinagemCNC {
         display: none;
     }
 
-    .text-introducao h2{
+    .text-introducao h2 {
         margin-top: 20px;
-        width: 100%;
-        font-size:50px;
+        width: 80%;
+        font-size: 50px;
     }
 
-    .mini-logo{
+    .mini-logo {
         margin-top: 60px;
     }
 
-    .divulga{
+    .divulga {
         font-size: 30px;
     }
 
-    .saiba-empresa-em{
+    .saiba-empresa-em {
         width: 50%;
         height: 40px;
     }
 
     /* sessão faixa-orcamento */
-    .faixa-orcamento{
+    .faixa-orcamento {
         margin-top: 30px;
         font-size: 20px;
         display: flex;
@@ -951,106 +1064,136 @@ h3 {
     }
 
     /* sessão servicos */
-    .servicos{
+    .servicos {
         height: auto;
     }
-    .em-ordem{
+
+    .em-ordem {
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
     }
 
-    .cards{
+    .cards {
         height: 400px;
     }
 
-    .sub-text{
+    .sub-text {
         margin-bottom: -80%;
     }
 
-    .cortando{
+    .cortando {
         width: 100%;
         height: 100%;
     }
 
     /* sessão clientes */
-    .clientes{
+    .clientes {
         height: auto;
+        width: 100%;
     }
-    .logos-slide{
+
+    .logos-slide {
         height: 270px;
     }
-    .padrao{
+
+    .padrao {
         height: 120px;
         width: 200px;
     }
-    
-    .logos{
+
+    .logos {
         padding: 30px 0;
     }
 
-    .logos:before{
+    .logos:before {
         width: 80px;
     }
 
-    .logos:after{
+    .logos:after {
         width: 80px;
     }
 
     /* botão button-topo */
-
-    /* .button-topo{
-        right: 70px;
-    } */
-
-    .voltar-ao-topo{
-        width: 40px;
-        height: 40px;
+    .voltar-ao-topo {
+        width: 50px;
+        height: 50px;
     }
 
     /* botão whatsapp */
-    /* .whatsapp-container{
-        right: 70px;
-    } */
-
-    .whatsapp-btn img{
-        width: 40px;
-        height: 40px;
+    .whatsapp-btn img {
+        width: 50px;
+        height: 50px;
     }
 
-    .whatsapp-tooltip{
+    .whatsapp-tooltip {
         display: none;
     }
 
     /* footer */
 
-    footer{
-        height: 1000px;
+    footer {
+        height: 800px;
     }
 
-    .informacao-final{
+    .informacao-final {
         display: flex;
         flex-direction: column;
         font-size: 20px;
         gap: 40px;
+        align-items: center;
     }
 
-    .breve-introducao{
+    .breve-introducao {
         width: 80%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .mini-texto{
+    .mini-texto {
         display: none;
     }
 
-    .espaco-tempo{
+    .espaco-tempo {
         width: 80%;
-        
     }
 
-    .contato{
+    .contato {
         width: 80%;
+    }
+
+    .centralizado {
+        margin-top: 10px;
+    }
+
+    .endereco-top {
+        color: rgb(30, 59, 78);
+        font-weight: bold;
+    }
+
+    .local {
+        margin-left: -110px;
+        font-size: 18px;
+    }
+
+    .horario-top {
+        color: rgb(30, 59, 78);
+        font-weight: bold;
+    }
+
+    .horario {
+        font-size: 18px;
+    }
+
+    .contato h3 {
+        color: rgb(30, 59, 78);
+    }
+
+    .redes-sociais {
+        margin-left: -40px;
+    }
+
+    .redes-sociais .social {
+        color: #fff;
     }
 }

@@ -402,6 +402,10 @@ li:hover {
 }
 
 @media  screen and (max-width: 678px) {
+    .topicos, .nossas-redes{
+        display: none;
+    }
+
     .slider .list .item .content{
         padding-right: 0;
     }
@@ -409,9 +413,26 @@ li:hover {
     .slider .list .item .content .title{
         font-size: 30px;
     }
+
+    .description p{
+        display: none;
+    }
+
+    .button {
+        width: 120px;
+    }
+
+    .button button{
+        font-size: 10px;
+    }
+
+    .nextPrevArrows{
+        margin-top: 20px;
+    }
 }
 
 @media  screen and (max-width: 935px) {
+
     .slider .list .item .content{
         padding-right: 0;
     }
