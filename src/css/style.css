@@ -37,6 +37,7 @@ nav {
     background: transparent;
     height: 8vh;
     z-index: 100;
+    font-family: "Oswald", sans-serif;
 }
 
 .nav-list li a {
@@ -952,7 +953,7 @@ h3 {
     .navegacao-mobile {
         display: flex;
         color: rgb(30, 59, 78);
-        margin-top: -30px;
+        margin-top: -10px;
     }
 
     .nav-list {
@@ -960,7 +961,7 @@ h3 {
         top: 9vh;
         right: 0;
         width: 50vw;
-        height: 35vh;
+        height: 50vh;
         background: rgb(30, 59, 78);
         flex-direction: column;
         align-items: center;
@@ -1145,8 +1146,8 @@ h3 {
 
     /* botão whatsapp */
     .whatsapp-btn img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 
     .whatsapp-tooltip {
