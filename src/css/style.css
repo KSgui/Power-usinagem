@@ -78,15 +78,13 @@ nav {
 /* navegação mobile FIM*/
 
 .pesquisa {
-    width: 80%;
+    width: 100%;
     display: flex;
     height: 100px;
     color: white;
     font-family: "Oswald", sans-serif;
     font-size: 22px;
-    margin-left: 20%;
     text-decoration: none;
-
 }
 
 ul {
@@ -105,7 +103,7 @@ ul {
     margin: 10px;
     padding: 5px;
     display: flex;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
     border-radius: 20px;
     justify-content: center;
@@ -160,12 +158,13 @@ ul {
     font-family: "Oswald", sans-serif;
     cursor: pointer;
     transition: .3s;
-    margin-top: 36px;
-    height: 140px;
+    margin-top: 46px;
+    height: 160px;
 }
 
 .drop a {
     color: rgb(30, 59, 78);
+    margin-top: 20px;
 }
 
 .drop a:hover {
@@ -478,7 +477,6 @@ hr {
     font-family: "Oswald", sans-serif;
     position: relative;
     overflow: hidden;
-
 }
 
 .usinando {
@@ -774,7 +772,6 @@ h3 {
     color: #fff;
     font-size: 20px;
     transition: all 0.4s ease;
-    background-color: #FF0000;
     text-decoration: none;
 }
 
@@ -828,8 +825,8 @@ h3 {
     align-items: center;
     justify-content: center;
     position: fixed;
-    right: 30px;
-    bottom: 120px;
+    right: 40px;
+    bottom: 130px;
     z-index: 100;
     cursor: pointer;
     opacity: 0;
@@ -860,8 +857,8 @@ h3 {
 /* botão do whatsapp */
 
 .whatsapp-container {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     padding: 6px;
     border-radius: 50%;
     display: flex;
@@ -875,8 +872,8 @@ h3 {
 }
 
 .whatsapp-btn img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
@@ -895,7 +892,7 @@ h3 {
     padding: 5px 10px;
     position: absolute;
     z-index: 1;
-    bottom: 10px;
+    bottom: 20px;
     left: -120px;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -939,7 +936,7 @@ h3 {
 
 /* RESPONSIVIDADE */
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 670px) {
 
     /* header */
     .logo {
@@ -988,8 +985,12 @@ h3 {
         transform: translateX(0);
     }
 
-    .nav-list li a.servicos-mobile{
-      color: rgb(255, 119, 0);
+    .nav-list li a.servicos-mobile {
+        color: rgb(255, 119, 0);
+    }
+
+    .nav-list li a:hover {
+        color: rgb(255, 119, 0);
     }
 
     .option-mobile {
@@ -998,7 +999,7 @@ h3 {
         gap: 10px;
     }
 
-    a.servicos-mobile hr{
+    a.servicos-mobile hr {
         width: 50%;
     }
 
@@ -1081,9 +1082,9 @@ h3 {
     }
 
     /* sessão faixa-orcamento */
-    .faixa-orcamento {
+    main .faixa-orcamento {
         margin-top: 30px;
-        font-size: 20px;
+        font-size: 25px;
         display: flex;
         text-align: center;
     }
@@ -1093,7 +1094,7 @@ h3 {
         height: auto;
     }
 
-    .em-ordem {
+    .servicos .em-ordem {
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
     }
@@ -1157,8 +1158,8 @@ h3 {
 
     /* footer */
 
-    footer {
-        height: 800px;
+    body footer {
+        height: 900px;
     }
 
     .informacao-final {
@@ -1176,16 +1177,23 @@ h3 {
         justify-content: center;
     }
 
+    .breve-introducao .mini-logo-foto {
+        width: 250px;
+        height: 200px;
+    }
+
     .mini-texto {
         display: none;
     }
 
-    .espaco-tempo {
+    .informacao-final .espaco-tempo {
         width: 80%;
+        margin-top: -20px;
     }
 
-    .contato {
+    .informacao-final .contato {
         width: 80%;
+        margin-top: 10px;
     }
 
     .centralizado {
@@ -1211,23 +1219,294 @@ h3 {
         font-size: 18px;
     }
 
-    .contato h3 {
+    .informacao-final .contato h3 {
         color: rgb(30, 59, 78);
-        margin-left: 20px;
-
+        margin-left: -150px;
     }
 
     .contatos i {
-        margin-left: 20px;
+        margin-left: 10px;
+    }
+
+    .icon {
+        width: 70px;
+        height: 70px;
     }
 
     .redes-sociais {
-        margin-left: -40px;
+        margin-left: 70px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    nav {
+        display: none;
     }
 
-    .redes-sociais .social {
-        color: #fff;
-        margin-left: -40px;
+    .navegacao-mobile {
+        display: flex;
+        color: rgb(30, 59, 78);
+        margin-top: -10px;
+        justify-content: end;
+    }
 
+    .mobile-menu {
+        display: block;
+        margin-right: 100px;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        width: 30vw;
+        height: 50vh;
+        background: rgb(30, 59, 78);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        display: none;
+        font-family: "Oswald", sans-serif;
+        font-weight: 800;
+    }
+
+    .nav-list li {
+        opacity: 0;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    .nav-list li a.servicos-mobile {
+        color: rgb(255, 119, 0);
+    }
+
+    .option-mobile {
+        margin-top: 10px;
+        display: block;
+        gap: 10px;
+    }
+
+    a.servicos-mobile hr {
+        width: 90px;
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
+
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    .antes-de-comecar h1 {
+        width: 60%;
+    }
+
+    .sub-script {
+        width: 60%;
+    }
+
+    /* sessão introdução  */
+
+    .introducao {
+        height: 600px;
+    }
+
+    .text-introducao {
+        height: 550px;
+    }
+
+    .usinagemCNC {
+        display: none;
+    }
+
+    .text-introducao h2 {
+        margin-top: 20px;
+        width: 80%;
+        font-size: 80px;
+    }
+
+    .mini-logo {
+        margin-top: 90px;
+    }
+
+    .saiba-empresa-em {
+        /* width: 50%; */
+        height: 50px;
+    }
+
+    /* sessão faixa-orcamento */
+    .faixa-orcamento {
+        font-size: 28px;
+    }
+
+    /* sessão servicos */
+    .servicos {
+        height: auto;
+    }
+
+    .em-ordem {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .cards {
+        height: 400px;
+    }
+
+    /* footer */
+    footer {
+        height: 1000px;
+    }
+
+    .informacao-final {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .breve-introducao {
+        width: 70%;
+        align-items: center;
+    }
+
+    .mini-logo-foto {
+        width: 250px;
+        height: 250px;
+    }
+
+    .espaco-tempo {
+        margin-top: 80px;
+        width: 70%;
+        height: 500px;
+        font-size: 22px;
+        align-items: center;
+    }
+
+    .endereco-top {
+        font-size: 25px;
+    }
+
+    .local {
+        font-size: 22px;
+    }
+
+    .horario-top {
+        font-size: 25px;
+    }
+
+    .mini-texto {
+        font-size: 18px;
+    }
+
+    .contato {
+        width: 70%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato h3 {
+        font-size: 25px;
+    }
+
+    .contatos i {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1370px) {
+    .pesquisa {
+        font-size: 18px;
+    }
+
+    .value {
+        font-size: 20px;
+    }
+
+    .drop {
+        font-size: 18px;
+        margin-top: 30px;
+        height: 120px;
+    }
+
+    .antes-de-comecar h1 {
+        font-size: 40px;
+    }
+
+    .usinagemCNC {
+        width: 60%;
+        height: 60%;
+        border-top-left-radius: 230px;
+        border-bottom-left-radius: 230px;
+    }
+
+    .text-introducao h2 {
+        font-size: 75px;
+    }
+
+    .divulga {
+        font-size: 30px;
+    }
+
+
+
+    .em-ordem {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sub-text {
+        font-size: 17px;
+        margin-bottom: -80%;
+    }
+
+
+    .informacao-final {
+        height: 220px;
+        padding: 40px 0px;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: "Oswald", sans-serif;
+    }
+
+    .social {
+        margin-left: 0px;
+    }
+
+    .icon {
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+        margin: 0 0px;
     }
 }

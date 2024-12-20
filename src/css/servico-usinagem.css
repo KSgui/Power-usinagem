@@ -485,6 +485,7 @@ li:hover {
         transition: transform 0.3s ease-in;
         display: none;
         font-family: "Oswald", sans-serif;
+        font-weight: 800;
     }
 
     .nav-list li {

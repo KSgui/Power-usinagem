@@ -20,7 +20,7 @@ header {
 nav {
     display: flex;
     backdrop-filter: blur(2px);
-    height: 80px;
+    height: 100px;
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@ nav {
     justify-content: space-between;
     font-family: "Oswald", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 li {
@@ -56,7 +56,7 @@ li {
     padding: 5px;
     display: flex;
     justify-content: center;
-    font-size: 22px;
+    font-size: 25px;
     border-radius: 20px;
     border: none;
     font-family: "Oswald", sans-serif;
@@ -112,11 +112,11 @@ li:hover {
 
 
 .orcamento {
-    width: 180px;
-    height: 55px;
+    width: 200px;
+    height: 70px;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
     cursor: pointer;
     background-color: rgb(255, 119, 0);
     border: none;
@@ -125,17 +125,17 @@ li:hover {
 
 .nossas-redes {
     width: 20%;
-    height: 55px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-right: 50px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .icon02 {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -252,7 +252,7 @@ li:hover {
 }
 
 .bem-vindo {
-    font-size: 18px;
+    font-size: 25px;
     color: #fff;
     font-weight: 400;
 }
@@ -276,12 +276,14 @@ li:hover {
 
 .sub-text {
     color: #fff;
-    font-size: 30px;
+    font-size: 34px;
     margin-bottom: 10px;
 }
 
 .introducao {
     color: #fff;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .proximo {
@@ -290,7 +292,7 @@ li:hover {
     height: 50px;
     border-radius: 50%;
     margin-left: -32%;
-    margin-top: 35%;
+    margin-top: 700px;
     border: none;
     display: flex;
     justify-content: center;
@@ -305,7 +307,7 @@ li:hover {
 }
 
 .nossa-historia {
-    height: 840px;
+    height: 740px;
     display: flex;
     flex-direction: column;
     background-color: rgb(227, 224, 224);
@@ -341,8 +343,9 @@ li:hover {
 }
 
 .contexto {
-    width: 70%;
+    width: 40%;
     padding: 20px;
+    margin-left: 30px;
     margin-top: 15px;
     font-size: 20px;
     font-family: "Oswald", sans-serif;
@@ -353,15 +356,15 @@ li:hover {
 }
 
 .sub {
-    width: 36%;
+    width: 40%;
     margin-top: 5px;
 }
 
 #antes-depois {
-    margin-top: -110px;
-    margin-left: 38%;
+    margin-top: -200px;
+    margin-left: 45%;
     position: relative;
-    width: 58%;
+    width: 52%;
     height: 520px;
     overflow: hidden;
     /* border-radius: 100px; */
@@ -436,6 +439,7 @@ li:hover {
     justify-content: center;
     cursor: pointer;
     transition: .9s;
+    width: 500px;
 }
 
 .cards:hover {
@@ -460,7 +464,7 @@ li:hover {
 }
 
 .descricao {
-    width: 400px;
+    width: 450px;
     height: 300px;
     background-color: grey;
     border-radius: 50px;
@@ -472,9 +476,14 @@ li:hover {
     font-family: "Oswald", sans-serif;
 }
 
+.titulo{
+    font-size: 35px;
+}
+
 .texto {
     display: flex;
     width: 85%;
+    font-size: 18px;
     justify-content: center;
     align-items: center;
     text-align: justify;
@@ -664,25 +673,25 @@ input {
 }
 
 .polita01 {
-    font-size: 32px;
+    font-size: 35px;
     color: rgb(255, 119, 0);
 }
 
 .breve-texto {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
     color: #fff;
 }
 
 number {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 900;
     color: rgb(255, 119, 0);
 }
 
 
-/*    CABEÇALHO    */
+/*    rodape    */
 
 footer {
     background-color: rgb(255, 119, 0);
@@ -976,7 +985,11 @@ h3 {
     border: 3px solid #ffffff;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1370px) {
+    
+}
+
+@media screen and (max-width: 670px) {
 
     /* header */
     .logo-power {
@@ -996,12 +1009,13 @@ h3 {
 
     .navegacao-mobile .mobile-menu {
         display: block;
+        margin-left: 200px;
     }
 
     .nav-list {
         position: absolute;
         top: 8vh;
-        right: 0;
+        right: -300px;
         width: 50vw;
         height: 50vh;
         background: rgb(30, 59, 78);
@@ -1013,12 +1027,21 @@ h3 {
         display: none;
         font-family: "Oswald", sans-serif;
         font-weight: 800;
+        /* margin-left: 200px; */
     }
 
     .nav-list li {
         opacity: 0;
         margin-top: 30px;
         font-size: 20px;
+    }
+
+    .nav-list li:hover {
+        background-color: transparent;
+    }
+
+    .nav-list li a:hover {
+        color: rgb(255, 119, 0);
     }
 
     .mobile-menu {
@@ -1079,7 +1102,7 @@ h3 {
     .adaptando {
         display: flex;
         flex-direction: column;
-        height: 800px;
+        height: 1000px;
     }
 
     .fotoReal {
@@ -1098,11 +1121,11 @@ h3 {
 
     /* sessão enquadrando */
     .enquadrando {
-        height: 1900px;
+        height: 1500px;
     }
 
     .nossa-historia {
-        height: 1850px;
+        height: 1450px;
     }
 
     .onde-tudo-comecou {
@@ -1110,25 +1133,25 @@ h3 {
     }
 
     .mini-logo {
-        margin-top: 80px;
+        margin-top: 40px;
     }
 
     .contexto {
-        width: 100%;
+        width: 85%;
     }
 
     .adp {
-        margin-top: 600px;
+        margin-top: 550px;
     }
 
     #antes-depois {
-        width: 100%;
-        margin-top: 590px;
-        margin-left: 0;
+        width: 95%;
+        margin-top: 300px;
+        margin-left: 15px;
     }
 
     .seta{
-        font-size: 20px;
+        font-size: 30px;
     }
 
     /* sessão valores */
@@ -1151,7 +1174,7 @@ h3 {
     }
 
     .descricao {
-        width: 350px;
+        width: 400px;
         height: 250px;
     }
 
@@ -1192,7 +1215,7 @@ h3 {
 
     .caixa-de-entrada {
         width: 100%;
-        height: 1000px;
+        height: 900px;
     }
 
     /* botão whatsapp */
@@ -1203,6 +1226,7 @@ h3 {
 
     footer {
         height: 800px;
+        margin-top: -50px;
     }
 
     .footer-wave-svg {
@@ -1265,11 +1289,11 @@ h3 {
 
     .contato h3 {
         color: rgb(30, 59, 78);
-        margin-left: 20px;
+        margin-left: 100px;
     }
 
     .contatos i {
-        margin-left: 20px;
+        margin-left: 100px;
     }
 
     .redes-sociais {
