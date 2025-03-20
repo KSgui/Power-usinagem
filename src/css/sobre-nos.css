@@ -476,7 +476,7 @@ li:hover {
     font-family: "Oswald", sans-serif;
 }
 
-.titulo{
+.titulo {
     font-size: 35px;
 }
 
@@ -985,8 +985,252 @@ h3 {
     border: 3px solid #ffffff;
 }
 
-@media screen and (max-width: 1370px) {
-    
+@media screen and (max-width: 1450px) {
+
+    /* nav */
+    .topicos {
+        margin-right: 150px;
+        width: 50%;
+    }
+
+    .orcamento {
+        display: none;
+    }
+
+    .nossas-redes {
+        display: none;
+    }
+
+    /* adaptando */
+    .adaptando {
+        height: 700px;
+    }
+
+    .bem-vindo {
+        font-size: 25px;
+    }
+
+    .sub-text {
+        font-size: 26px;
+    }
+
+    .introducao {
+        font-size: 20px;
+    }
+
+    .proximo {
+        margin-top: 600px;
+    }
+
+    /* enquadrando */
+    #antes-depois {
+        margin-top: -100px;
+    }
+
+    .nossa-historia {
+        height: 1000px;
+    }
+
+    /* valores */
+    .valores {
+        display: flex;
+        flex-direction: column;
+        height: 1300px;
+    }
+
+    /* oq-nossos-clientes-dizem */
+    .titulo-grande {
+        font-size: 70px;
+    }
+
+    /* politica-de-qualidade */
+
+    .politica-de-qualidade {
+        height: 700px;
+    }
+
+    .aprovado {
+        width: 50%;
+    }
+
+    .caixa-de-entrada {
+        width: 50%;
+    }
+
+    .breve-texto {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1130px) {
+
+    /* header */
+    .logo-power {
+        width: 250px;
+    }
+
+    .topicos,
+    .orcamento,
+    .nossas-redes {
+        display: none;
+    }
+
+    header nav.navegacao-mobile {
+        display: flex;
+        width: 50%;
+        justify-content: end;
+        margin-left: 350px;
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-right: 50px;
+        /* width: 200px; */
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        /* right: -40%; */
+        width: 25vw;
+        height: 50vh;
+        background: rgb(30, 59, 78);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        display: none;
+        font-family: "Oswald", sans-serif;
+        font-weight: 800;
+    }
+
+    .nav-list li {
+        opacity: 0;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .nav-list li:hover {
+        background-color: transparent;
+    }
+
+    .nav-list li a:hover {
+        color: rgb(255, 119, 0);
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    .servicos-mobile {
+        display: block;
+    }
+
+    .nav-list li a.servicos-mobile {
+        color: rgb(255, 119, 0);
+    }
+
+    .option-mobile {
+        margin-top: 35px;
+        display: block;
+        margin-left: -80px;
+    }
+
+    hr {
+        width: 100%;
+        color: #fff;
+        background-color: #fff;
+    }
+
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
+
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+
+    /* adaptando */
+    .adaptando {
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .fotoReal {
+        width: 100%;
+        height: 600px;
+    }
+
+    .infeite {
+        height: 600px;
+        width: 100%;
+    }
+
+    .proximo {
+        display: none;
+    }
+
+    /* enquadrando */
+
+    .enquadrando {
+        height: 1500px;
+    }
+
+    .nossa-historia {
+        height: 1450px;
+    }
+
+    .onde-tudo-comecou {
+        font-size: 50px;
+    }
+
+    .mini-logo {
+        margin-top: 20px;
+    }
+
+    .contexto {
+        width: 85%;
+    }
+
+    .adp {
+        margin-top: 550px;
+    }
+
+    #antes-depois {
+        width: 95%;
+        margin-top: 280px;
+        margin-left: 15px;
+    }
+
+    .seta {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 670px) {
@@ -1007,9 +1251,13 @@ h3 {
         width: 80px;
     }
 
-    .navegacao-mobile .mobile-menu {
+    header nav.navegacao-mobile {
+        display: flex;
+    }
+
+    .mobile-menu {
         display: block;
-        margin-left: 200px;
+        margin-right: -100px;
     }
 
     .nav-list {
@@ -1044,16 +1292,13 @@ h3 {
         color: rgb(255, 119, 0);
     }
 
-    .mobile-menu {
-        display: block;
-    }
 
 
     .nav-list.active {
         transform: translateX(0);
     }
 
-    .servicos-mobile{
+    .servicos-mobile {
         display: block;
     }
 
@@ -1150,7 +1395,7 @@ h3 {
         margin-left: 15px;
     }
 
-    .seta{
+    .seta {
         font-size: 30px;
     }
 
@@ -1185,11 +1430,11 @@ h3 {
         height: 700px;
     }
 
-    .titulos-Mai-Min{
+    .titulos-Mai-Min {
         width: 100%;
     }
 
-    .mini-texto{
+    .mini-texto {
         margin-top: 5px;
     }
 

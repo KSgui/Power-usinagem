@@ -265,7 +265,7 @@ hr {
     width: 180px;
     height: 70px;
     font-family: "Oswald", sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     text-transform: uppercase;
     background-color: transparent;
     color: white;
@@ -284,7 +284,7 @@ hr {
     margin-left: 40px;
     width: 200px;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
 
     animation: showSlow 0.9s linear 1 forwards;
 
@@ -380,7 +380,7 @@ hr {
     margin: 10px 0px;
     margin-left: 50px;
     font-family: "Oswald", sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     width: 80%;
 
 }
@@ -472,7 +472,7 @@ hr {
     background-color: rgb(255, 119, 0);
     align-items: center;
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     font-family: "Oswald", sans-serif;
     position: relative;
@@ -527,7 +527,7 @@ hr {
 .ler-mais {
     width: 40%;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .direcionado {
@@ -1079,6 +1079,10 @@ h3 {
     .saiba-empresa-em {
         width: 50%;
         height: 40px;
+    }
+
+    .contexto{
+        font-size: 20px;
     }
 
     /* sessão faixa-orcamento */
